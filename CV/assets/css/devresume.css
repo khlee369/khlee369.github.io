@@ -11817,7 +11817,7 @@ a.theme-link:hover {
 .resume-section-heading {
   position: relative;
   padding-left: 1rem;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   letter-spacing: 0.15rem;
   color: #54b689;
 }
@@ -11858,13 +11858,13 @@ a.resume-link:hover {
   font-size: 0.875rem;
 }
 .resume-main .item-title {
-  font-size: 1rem;
+  font-size: 1.125rem;
 }
 .resume-main .item-meta {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
 }
 .resume-main .item-content {
-  font-size: 0.875rem;
+  font-size: 0.925rem;
   margin-bottom: 10px;
 }
 .resume-aside {
