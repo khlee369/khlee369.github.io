@@ -88,3 +88,32 @@
 #myButton:hover {
   text-decoration: none;
 }
+
+.photocard-imgbox {
+  height: 300px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photocard-imgbox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.webtoonme-mediabox {
+  height: 300px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.webtoonme-mediabox img,
+.webtoonme-mediabox video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
