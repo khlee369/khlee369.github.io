@@ -17,6 +17,7 @@ export const translations: Record<
       bitsensingBullets: string[];
     };
     projects: {
+      thingsbookDesc: string;
       wcaiDesc: string;
       shaperDesc: string;
       photocardDesc: string;
@@ -53,6 +54,7 @@ export const translations: Record<
       ],
     },
     projects: {
+      thingsbookDesc: "Contributed to the development of a global webtoon search engine for NAVER’s UGC platform Thingsbook, targeting the North American market. Built scalable ETL pipelines to support hybrid search, enabling both vector-based retrieval and BM25-style keyword search, and ensuring reliable indexing and retrieval across global services.",
       wcaiDesc:
         "WEBTOON Comprehension AI (WCAI) is a scalable story-understanding agentic system designed to support marketing, recommendation, and localization teams by automating narrative comprehension across WEBTOON series. Built on LangGraph-based agentic workflows, it integrates VLM-powered visual–text analysis to identify characters, speakers, and plot structures. I contributed to the architecture and deployment of these workflows, enabling over 70% automation of manual content tagging and significantly improving team productivity. The system incorporates LangSmith for robust tracing and facilitates SME collaboration to generate business-specific insights such as high-CTR keywords and genre recommendations.",
       shaperDesc:
@@ -94,10 +96,11 @@ export const translations: Record<
       ],
     },
     projects: {
+      thingsbookDesc: "북미 시장을 타겟으로 한 네이버 신규 UGC 플랫폼 씽스북의 글로벌 웹툰 검색 엔진 개발에 기여했습니다. 벡터 서치와 BM25 기반 키워드 서치를 함께 지원하는 하이브리드 검색을 위해 ETL 파이프라인을 구축하고, 안정적인 인덱싱과 검색 품질 향상을 지원했습니다.",
       wcaiDesc:
         "WEBTOON Comprehension AI(WCAI)는 웹툰 시리즈 전반의 서사 이해를 자동화하여 마케팅, 추천, 현지화 팀을 지원하는 확장 가능한 스토리 이해 에이전트 시스템입니다. LangGraph 기반 에이전트 워크플로우에 VLM 기반 시각–텍스트 분석을 통합해 캐릭터, 화자, 플롯 구조를 식별합니다. 해당 워크플로우의 아키텍처 설계 및 배포에 기여하여 수동 콘텐츠 태깅의 70% 이상을 자동화하고 팀 생산성을 크게 향상시켰습니다. 또한 LangSmith 기반 트레이싱과 SME 협업을 통해 고CTR 키워드 및 장르 추천과 같은 비즈니스 인사이트 생성을 지원했습니다.",
       shaperDesc:
-        "Shaper는 웹툰 크리에이터를 위한 제작 지원 3D 모델링 도구입니다. 크리에이터가 3D 캐릭터 모델을 제작하고, 포즈를 일일이 스케치하지 않아도 자연스럽게 변경할 수 있도록 지원합니다. 바디 포즈 리타겟팅 시스템의 핸드 포즈 리타겟팅 모듈 개발에 기여하여 Shaper의 핵심 기능을 강화했으며, 이는 NASDAQ IPO 성공에 기여했습니다.",
+        "Shaper는 웹툰 크리에이터를 위한 제작 지원 3D 모델링 도구입니다. 크리에이터가 3D 캐릭터 모델을 제작하고, 포즈를 일일이 스케치하지 않아도 자연스럽게 변경할 수 있도록 지원합니다. body pose retargeting system의 hand pose retargeting module 개발에 기여하여 Shaper의 핵심 기능을 강화했으며, 이는 NASDAQ IPO 성공에 기여했습니다.",
       photocardDesc:
         "디퓨전 모델을 활용한 캐릭터 포토카드 생성 연구 및 개발을 수행했습니다. 다양한 형태의 사용자 프롬프트를 처리해야 했기 때문에 폭넓은 시나리오에 대응 가능한 범용성이 요구되었으며, 어떤 조건에서도 일관되게 고품질 캐릭터 이미지를 생성하는 모델 개발에 집중했습니다.",
       webtoonmeDesc:

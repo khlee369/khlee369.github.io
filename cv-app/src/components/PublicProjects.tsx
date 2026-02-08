@@ -11,6 +11,25 @@ export function PublicProjects() {
 
       <div className="item">
         <div className="item-heading row align-items-center mb-2">
+            <h4 className="item-title col-12 col-md-9 col-lg-9 mb-2 mb-md-0">Thingsbook (North America)</h4>
+          <div className="item-meta col-12 col-md-3 col-lg-3 text-muted text-start text-md-end">Naver Webtoon AI</div>
+        </div>
+        <div className="item-content">
+          <p style={{ marginBottom: '2px' }}>{t.thingsbookDesc}</p>
+          <p>
+            <a
+              href="https://www.navercorp.com/media/pressReleasesDetail?seq=34306"
+              target="_blank"
+              rel="noreferrer"
+            >
+              [Related Article]
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div className="item">
+        <div className="item-heading row align-items-center mb-2">
           <h4 className="item-title col-12 col-md-9 col-lg-9 mb-2 mb-md-0">Webtoon Comprehension AI(WCAI)</h4>
           <div className="item-meta col-12 col-md-3 col-lg-3 text-muted text-start text-md-end">Naver Webtoon AI</div>
         </div>

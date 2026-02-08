@@ -39,8 +39,7 @@ export function ResumeAside() {
             className="list-unstyled resume-skills-list"
             style={{ listStyleType: 'disc', paddingLeft: '20px' }}
           >
-            <li className="mb-2">Advanced proficiency in creating demo prototypes using <b>Streamlit</b></li>
-            <li className="mb-2">Experienced in <b>React</b> and <b>JavaScript</b></li>
+            <li className="mb-2">Experienced in <b>React</b>, <b>Vue 3</b>, and <b>TypeScript</b></li>
           </ul>
         </div>
         <div className="item">
