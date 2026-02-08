@@ -1,6 +1,10 @@
 import { baseUrl } from '../utils/baseUrl';
+import { useLang } from '../contexts/LangContext';
+import { translations } from '../i18n/translations';
 
 export function ResumeIntro() {
+  const { lang } = useLang();
+  const t = translations[lang].intro;
   return (
     <div className="resume-intro py-3">
       <div className="row align-items-center">
@@ -13,16 +17,13 @@ export function ResumeIntro() {
         </div>
         <div className="col text-start">
           <p style={{ marginBottom: '5px', fontSize: 'medium' }}>
-            I work as an AI Research Engineer at{' '}
-            <a href="https://webtoonscorp.com/">NAVER WEBTOON</a>, specializing in Generative AI, including computer
-            vision and large language models (LLM). I have participated in numerous AI research projects, successfully
-            addressing real-world problems with practical solutions. My focus lies in devising effective strategies to
-            make these models more accessible and user-friendly. I hold a Bachelor&apos;s degree in Computer Science from{' '}
-            <a href="https://www.unist.ac.kr/">UNIST</a>, where I also pursued a minor in Human-Computer Interaction
-            (HCI). During my time at UNIST, I gained valuable experience working in several AI research labs, including
-            Prof. Sungju Hwang&apos;s{' '}
-            <a href="https://www.mlai-kaist.com/people">Machine Learning and Vision Research (MLVR) Lab</a>. I aspire to
-            develop AI technologies and services that are loved and widely used by people around the world.
+            {t.beforeNaver}
+            <a href="https://webtoonscorp.com/">NAVER WEBTOON</a>
+            {t.afterNaver}
+            <a href="https://www.unist.ac.kr/">UNIST</a>
+            {t.afterUnist}
+            <a href="https://www.mlai-kaist.com/people">Machine Learning and Vision Research (MLVR) Lab</a>
+            {t.afterMlvr}
           </p>
         </div>
       </div>

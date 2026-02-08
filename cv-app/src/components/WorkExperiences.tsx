@@ -1,6 +1,10 @@
 import { baseUrl } from '../utils/baseUrl';
+import { useLang } from '../contexts/LangContext';
+import { translations } from '../i18n/translations';
 
 export function WorkExperiences() {
+  const { lang } = useLang();
+  const t = translations[lang].work;
   return (
     <section className="work-section py-3">
       <h3 className="text-uppercase resume-section-heading mb-4">Work Experiences</h3>
@@ -23,13 +27,7 @@ export function WorkExperiences() {
         </div>
         <div className="item-content">
           <p style={{ marginBottom: '5px' }}>AI Research Engineer</p>
-          <p>
-            I have conducted research and engineering on generative models, including GAN and diffusion, and applied
-            them to various computer vision domains such as image, video, and 3D. Additionally, I have expanded my
-            expertise to large language models (LLM), utilizing RAG and Agentic LLM to solve diverse problems and
-            contribute to improving work efficiency. I participated in numerous projects using Generative AI, including
-            the creation of tools for creators and artists.
-          </p>
+          <p>{t.webtoonDesc}</p>
         </div>
       </div>
       <div className="item mb-3">
@@ -51,16 +49,11 @@ export function WorkExperiences() {
         </div>
         <div className="item-content">
           <p style={{ marginBottom: '5px' }}>AI Research Engineer</p>
-          <p>
-            Bitensing is a startup focused on radar chipset and sensors for autonomous driving. At Bitsensing, I
-            researched and developed object detection modules for autonomous driving by fusing computer vision and radar
-            sensors.
-          </p>
+          <p>{t.bitsensingDesc}</p>
           <ul className="resume-list">
-            <li>Developed a robust gesture recognition model for radar sensors operating in noisy environments.</li>
-            <li>Researched the object detection model for autonomous driving and embedded it into an edge device.</li>
-            <li>Set up ML-Ops architecture using docker, kubeflow, and katib.</li>
-            <li>Investigated camera & radar sensor fusion.</li>
+            {t.bitsensingBullets.map((bullet, i) => (
+              <li key={i}>{bullet}</li>
+            ))}
           </ul>
         </div>
       </div>

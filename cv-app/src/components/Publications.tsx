@@ -1,9 +1,14 @@
+import { useLang } from '../contexts/LangContext';
+import { translations } from '../i18n/translations';
+
 export function Publications() {
+  const { lang } = useLang();
+  const footnote = translations[lang].publications.footnote;
   return (
     <section className="project-section py-3">
       <h3 className="text-uppercase resume-section-heading mb-2">Publications</h3>
       <p className="item-meta" style={{ opacity: 0.7 }}>
-        (*indicates equal contribution)
+        {footnote}
       </p>
 
       <div className="item">

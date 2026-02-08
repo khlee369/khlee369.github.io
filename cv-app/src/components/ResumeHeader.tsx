@@ -1,4 +1,7 @@
+import { useLang } from '../contexts/LangContext';
+
 export function ResumeHeader() {
+  const { lang, setLang } = useLang();
   return (
     <div className="resume-header">
       <div className="row align-items-center">
@@ -7,6 +10,25 @@ export function ResumeHeader() {
           <div className="resume-tagline mb-3 mb-md-0">AI Research Engineer</div>
         </div>
         <div className="resume-contact col-12 col-md-6 col-lg-4 col-xl-3">
+          <div className="resume-lang-toggle mb-2 text-end">
+            <button
+              type="button"
+              className={`border-0 bg-transparent p-0 me-2 ${lang === 'en' ? 'fw-bold theme-link' : 'text-muted'}`}
+              onClick={() => setLang('en')}
+              aria-label="English"
+            >
+              🇺🇸 ENG
+            </button>
+            <span className="text-muted">/</span>
+            <button
+              type="button"
+              className={`border-0 bg-transparent p-0 ms-2 ${lang === 'ko' ? 'fw-bold theme-link' : 'text-muted'}`}
+              onClick={() => setLang('ko')}
+              aria-label="한국어"
+            >
+              🇰🇷 KOR
+            </button>
+          </div>
           <ul className="list-unstyled mb-0">
             <li className="mb-2">
               <i className="fas fa-phone-square fa-fw fa-lg me-2"></i>
