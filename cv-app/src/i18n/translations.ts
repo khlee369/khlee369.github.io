@@ -17,6 +17,7 @@ export const translations: Record<
       bitsensingBullets: string[];
     };
     projects: {
+      canvasDesc: string;
       thingsbookDesc: string;
       wcaiDesc: string;
       shaperDesc: string;
@@ -54,6 +55,7 @@ export const translations: Record<
       ],
     },
     projects: {
+      canvasDesc: "WEBTOON Canvas is a global UGC platform that empowers creators worldwide to publish and share their stories. I contributed to the development of the AI Agent-based automatic translation system, enabling creators to seamlessly localize their content across multiple languages and significantly lowering the barrier for global distribution.",
       thingsbookDesc: "Contributed to the development of a global webtoon search engine for NAVER’s UGC platform Thingsbook, targeting the North American market. Built scalable ETL pipelines to support hybrid search, enabling both vector-based retrieval and BM25-style keyword search, and ensuring reliable indexing and retrieval across global services.",
       wcaiDesc:
         "WEBTOON Comprehension AI (WCAI) is a scalable story-understanding agentic system designed to support marketing, recommendation, and localization teams by automating narrative comprehension across WEBTOON series. Built on LangGraph-based agentic workflows, it integrates VLM-powered visual–text analysis to identify characters, speakers, and plot structures. I contributed to the architecture and deployment of these workflows, enabling over 70% automation of manual content tagging and significantly improving team productivity. The system incorporates LangSmith for robust tracing and facilitates SME collaboration to generate business-specific insights such as high-CTR keywords and genre recommendations.",
@@ -96,6 +98,7 @@ export const translations: Record<
       ],
     },
     projects: {
+      canvasDesc: "WEBTOON Canvas는 전 세계 크리에이터가 자유롭게 작품을 게시하고 공유할 수 있는 글로벌 UGC 플랫폼입니다. AI Agent 기반 자동 번역 시스템 개발에 기여하여, 크리에이터가 다국어로 콘텐츠를 손쉽게 현지화할 수 있도록 지원하고 글로벌 유통의 진입 장벽을 크게 낮추었습니다.",
       thingsbookDesc: "북미 시장을 타겟으로 한 네이버 신규 UGC 플랫폼 씽스북의 글로벌 웹툰 검색 엔진 개발에 기여했습니다. 벡터 서치와 BM25 기반 키워드 서치를 함께 지원하는 하이브리드 검색을 위해 ETL 파이프라인을 구축하고, 안정적인 인덱싱과 검색 품질 향상을 지원했습니다.",
       wcaiDesc:
         "WEBTOON Comprehension AI(WCAI)는 웹툰 시리즈 전반의 서사 이해를 자동화하여 마케팅, 추천, 현지화 팀을 지원하는 확장 가능한 스토리 이해 에이전트 시스템입니다. LangGraph 기반 에이전트 워크플로우에 VLM 기반 시각–텍스트 분석을 통합해 캐릭터, 화자, 플롯 구조를 식별합니다. 해당 워크플로우의 아키텍처 설계 및 배포에 기여하여 수동 콘텐츠 태깅의 70% 이상을 자동화하고 팀 생산성을 크게 향상시켰습니다. 또한 LangSmith 기반 트레이싱과 SME 협업을 통해 고CTR 키워드 및 장르 추천과 같은 비즈니스 인사이트 생성을 지원했습니다.",

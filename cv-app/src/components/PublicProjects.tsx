@@ -11,8 +11,35 @@ export function PublicProjects() {
 
       <div className="item">
         <div className="item-heading row align-items-center mb-2">
+          <h4 className="item-title col-12 col-md-9 col-lg-9 mb-2 mb-md-0">Canvas</h4>
+          <div className="item-meta col-12 col-md-3 col-lg-3 text-muted text-start text-md-end">Naver Webtoon AI<div>2025</div></div>
+        </div>
+        <div className="item-content">
+          <p style={{ marginBottom: '2px' }}>{t.canvasDesc}</p>
+          <p>
+            <a
+              href="https://www.youtube.com/watch?v=Eh0yh77pn1w"
+              target="_blank"
+              rel="noreferrer"
+            >
+              [YouTube]
+            </a>
+            {' '}
+            <a
+              href="https://about.webtoon.com/press-release/238"
+              target="_blank"
+              rel="noreferrer"
+            >
+              [Press Release]
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div className="item">
+        <div className="item-heading row align-items-center mb-2">
             <h4 className="item-title col-12 col-md-9 col-lg-9 mb-2 mb-md-0">Thingsbook (North America)</h4>
-          <div className="item-meta col-12 col-md-3 col-lg-3 text-muted text-start text-md-end">Naver Webtoon AI</div>
+          <div className="item-meta col-12 col-md-3 col-lg-3 text-muted text-start text-md-end">Naver Webtoon AI<div>2025</div></div>
         </div>
         <div className="item-content">
           <p style={{ marginBottom: '2px' }}>{t.thingsbookDesc}</p>
@@ -31,7 +58,7 @@ export function PublicProjects() {
       <div className="item">
         <div className="item-heading row align-items-center mb-2">
           <h4 className="item-title col-12 col-md-9 col-lg-9 mb-2 mb-md-0">Webtoon Comprehension AI(WCAI)</h4>
-          <div className="item-meta col-12 col-md-3 col-lg-3 text-muted text-start text-md-end">Naver Webtoon AI</div>
+          <div className="item-meta col-12 col-md-3 col-lg-3 text-muted text-start text-md-end">Naver Webtoon AI<div>2024 - 2025</div></div>
         </div>
         <div className="item-content">
           <p style={{ marginBottom: '2px' }}>{t.wcaiDesc}</p>
@@ -54,7 +81,7 @@ export function PublicProjects() {
       <div className="item">
         <div className="item-heading row align-items-center mb-2">
           <h4 className="item-title col-12 col-md-9 col-lg-9 mb-2 mb-md-0">Shaper</h4>
-          <div className="item-meta col-12 col-md-3 col-lg-3 text-muted text-start text-md-end">Naver Webtoon AI</div>
+          <div className="item-meta col-12 col-md-3 col-lg-3 text-muted text-start text-md-end">Naver Webtoon AI<div>2023 - 2024</div></div>
         </div>
         <div className="item-content">
           <p style={{ marginBottom: '2px' }}>{t.shaperDesc}</p>
@@ -66,6 +93,22 @@ export function PublicProjects() {
             >
               [S-1 Report]
             </a>
+            {' '}
+            <a
+              href="https://n.news.naver.com/mnews/article/029/0003023397?sid=103"
+              target="_blank"
+              rel="noreferrer"
+            >
+              [Related Article]
+            </a>
+            {' '}
+            <a
+              href="https://shaper.webtoons.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              [Product]
+            </a>
           </p>
         </div>
       </div>
@@ -73,7 +116,7 @@ export function PublicProjects() {
       <div className="item">
         <div className="item-heading row align-items-center mb-2">
           <h4 className="item-title col-12 col-md-9 col-lg-9 mb-2 mb-md-0">Character Photocard</h4>
-          <div className="item-meta col-12 col-md-3 col-lg-3 text-muted text-start text-md-end">Naver Webtoon AI</div>
+          <div className="item-meta col-12 col-md-3 col-lg-3 text-muted text-start text-md-end">Naver Webtoon AI<div>2023</div></div>
         </div>
         <div className="item-content">
           <p style={{ marginBottom: '2px' }}>{t.photocardDesc}</p>
@@ -118,7 +161,7 @@ export function PublicProjects() {
       <div className="item">
         <div className="item-heading row align-items-center mb-2">
           <h4 className="item-title col-12 col-md-9 col-lg-9 mb-2 mb-md-0">WebtoonMe</h4>
-          <div className="item-meta col-12 col-md-3 col-lg-3 text-muted text-start text-md-end">Naver Webtoon AI</div>
+          <div className="item-meta col-12 col-md-3 col-lg-3 text-muted text-start text-md-end">Naver Webtoon AI<div>2021 - 2022</div></div>
         </div>
         <div className="item-content">
           <p style={{ marginBottom: '2px' }}>{t.webtoonmeDesc}</p>
@@ -153,7 +196,7 @@ export function PublicProjects() {
       <div className="item">
         <div className="item-heading row align-items-center mb-2">
           <h4 className="item-title col-12 col-md-9 col-lg-9 mb-2 mb-md-0">LINE Webtoon Year-in-review</h4>
-          <div className="item-meta col-12 col-md-3 col-lg-3 text-muted text-start text-md-end">Naver Webtoon AI</div>
+          <div className="item-meta col-12 col-md-3 col-lg-3 text-muted text-start text-md-end">Naver Webtoon AI<div>2021</div></div>
         </div>
         <div className="item-content">
           <p style={{ marginBottom: '2px' }}>{t.yearinreviewDesc}</p>
