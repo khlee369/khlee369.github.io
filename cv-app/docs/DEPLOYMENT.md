@@ -64,6 +64,19 @@ npm run preview
 
 `http://localhost:4173/CV/` 로 접속하여 프로덕션 빌드를 확인한다.
 
+## PDF로 내보내기 (이력서 파일)
+
+CV를 제출용 PDF로 뽑으려면:
+
+```bash
+cd cv-app && npm run pdf
+```
+
+`exports/`에 EN/KO 각각 2개씩 생성된다 (`*.pdf` = 단일 연속 페이지, `*_A4.pdf` = A4 분할본). 브라우저 인쇄(Ctrl+P)는 A4 폭에서 Bootstrap이 모바일 레이아웃으로 무너지므로, 이 스크립트는 headless Chromium으로 **데스크톱 레이아웃**을 렌더한다(`scripts/export-pdf.mjs`). 언어 토글·푸터·영상은 제거되고, 상단에 클릭 가능한 "원본 CV 링크"가 삽입된다.
+
+- 최초 1회 브라우저 설치 필요: `npx playwright install chromium`
+- `exports/`와 모든 `*.pdf`는 루트 `.gitignore`로 커밋에서 제외된다
+
 ## 경로 설정 주의사항
 
 ### base 경로 변경 시 체크리스트

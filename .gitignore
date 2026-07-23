@@ -1,0 +1,3 @@
+# Generated CV export PDFs — never commit (regenerate via `cd cv-app && npm run pdf`)
+*.pdf
+/cv-app/exports/
