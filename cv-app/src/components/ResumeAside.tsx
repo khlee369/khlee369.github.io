@@ -17,7 +17,7 @@ export function ResumeAside() {
         <div className="item">
           <h4 className="item-title">Knowledge</h4>
           <ul className="list-unstyled resume-skills-list">
-            <li className="mb-2">Generative AI, Computer Vision, LLM, Machine Learning</li>
+            <li className="mb-2">Generative AI, Computer Vision, LLM, Machine Learning, Search &amp; Information Retrieval</li>
           </ul>
         </div>
         <div className="item">
@@ -31,6 +31,7 @@ export function ResumeAside() {
             </li>
             <li className="mb-2">Advanced proficiency in <b>PyTorch</b></li>
             <li className="mb-2">Advanced proficiency in <b>LangChain</b> and <b>LangGraph</b></li>
+            <li className="mb-2">Proficiency in <b>Go</b></li>
           </ul>
         </div>
         <div className="item">
@@ -49,7 +50,7 @@ export function ResumeAside() {
             style={{ listStyleType: 'disc', paddingLeft: '20px' }}
           >
             <li className="mb-2">Skilled in building <b>REST API</b> servers using <b>FastAPI</b></li>
-            <li className="mb-2">Experienced in <b>MySQL</b>, <b>Qdrant</b>, and <b>Redis</b>.</li>
+            <li className="mb-2">Experienced in <b>OpenSearch</b>, <b>Milvus</b>, <b>MySQL</b>, <b>Qdrant</b>, and <b>Redis</b>.</li>
           </ul>
         </div>
       </section>

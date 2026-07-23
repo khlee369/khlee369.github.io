@@ -13,6 +13,7 @@ export const translations: Record<
     };
     work: {
       webtoonDesc: string;
+      webtoonBullets: string[];
       bitsensingDesc: string;
       bitsensingBullets: string[];
     };
@@ -44,7 +45,14 @@ export const translations: Record<
     },
     work: {
       webtoonDesc:
-        "I have conducted research and engineering on generative models, including GANs and diffusion models, and applied them across various computer vision domains such as image, video, and 3D. More recently, I have expanded my expertise to large language models (LLMs), leveraging RAG and agentic LLM approaches to solve diverse problems and improve overall work efficiency. I have participated in numerous Generative AI projects, including the development of tools for creators and artists.",
+        "At Naver Webtoon, I research and engineer generative AI and LLM-based systems, applying them across diverse computer vision domains such as image, video, and 3D. I have contributed to a wide range of projects spanning research and productization, including tools for creators and artists.",
+      webtoonBullets: [
+        "Developed query understanding (intent classification, entity extraction) to improve search quality.",
+        "Introduced vector search and improved the webtoon search engine.",
+        "Designed an agent system for content generation and IP utilization specific to the webtoon domain.",
+        "Conducted LLM-based RAG and agent projects, contributing to improved internal work efficiency.",
+        "Researched and engineered generative AI models, including GANs and diffusion models.",
+      ],
       bitsensingDesc:
         "Bitsensing is a startup focused on radar chipsets and sensors for autonomous driving. At Bitsensing, I researched and developed object detection modules for autonomous driving by fusing computer vision with radar sensor data.",
       bitsensingBullets: [
@@ -87,7 +95,14 @@ export const translations: Record<
     },
     work: {
       webtoonDesc:
-        "GAN과 디퓨전 모델을 포함한 생성 모델 연구 및 엔지니어링을 수행하고, 이미지·영상·3D 등 다양한 컴퓨터 비전 도메인에 적용해 왔습니다. 최근에는 RAG 및 에이전트 기반 LLM을 활용해 다양한 문제를 해결하며 업무 효율 개선에 기여하고 있습니다. 또한 크리에이터와 아티스트를 위한 도구 개발을 포함해 생성형 AI를 활용한 다수의 프로젝트에 참여했습니다.",
+        "Naver Webtoon에서 생성형 AI와 LLM 기반 시스템을 연구·엔지니어링하며, 이미지·영상·3D 등 다양한 컴퓨터 비전 도메인에 적용해 왔습니다. 크리에이터와 아티스트를 위한 도구를 포함해 연구부터 상용화까지 폭넓은 프로젝트에 기여했습니다.",
+      webtoonBullets: [
+        "Query Understanding(의도 분류·개체 추출) 연구 개발을 통한 검색 품질 고도화",
+        "Vector Search 도입 및 웹툰 검색 엔진 개선",
+        "웹툰 도메인만의 콘텐츠 생성과 IP 활용을 위한 Agent System을 설계",
+        "LLM을 기반으로 하는 RAG 및 Agent 기반 프로젝트 수행 및 사내 업무 효율 개선에 기여",
+        "GAN과 Diffusion 모델을 포함한 Generative AI 모델 연구 및 엔지니어링 수행",
+      ],
       bitsensingDesc:
         "Bitsensing은 자율주행용 레이더 칩셋 및 센서에 집중한 스타트업입니다. 컴퓨터 비전과 레이더 센서 데이터를 융합한 자율주행용 객체 탐지 모듈의 연구 및 개발을 담당했습니다.",
       bitsensingBullets: [

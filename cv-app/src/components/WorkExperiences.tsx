@@ -28,6 +28,11 @@ export function WorkExperiences() {
         <div className="item-content">
           <p style={{ marginBottom: '5px' }}>AI Research Engineer</p>
           <p>{t.webtoonDesc}</p>
+          <ul className="resume-list">
+            {t.webtoonBullets.map((bullet, i) => (
+              <li key={i}>{bullet}</li>
+            ))}
+          </ul>
         </div>
       </div>
       <div className="item mb-3">
