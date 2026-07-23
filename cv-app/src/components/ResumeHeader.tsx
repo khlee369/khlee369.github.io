@@ -55,9 +55,20 @@ export function ResumeHeader() {
               <i className="fas fa-envelope-square fa-fw fa-lg me-2"></i>
               <a className="resume-link" href="mailto:#">lex.less38@gmail.com</a>
             </li>
+            <li className="mb-2">
+              <i className="fab fa-linkedin fa-fw fa-lg me-2"></i>
+              <a
+                className="resume-link"
+                href="https://www.linkedin.com/in/%EA%B4%91%ED%98%B8-%EC%9D%B4-150482189/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
+            </li>
             <li className="mb-0">
               <i className="fas fa-map-marker-alt fa-fw fa-lg me-2"></i>
-              Pangyo, S.Korea
+              Seoul, S.Korea
             </li>
           </ul>
         </div>
