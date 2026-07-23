@@ -179,3 +179,128 @@
   font-weight: 600;
   letter-spacing: 0.02em;
 }
+
+/* ============================================================
+   Print / PDF  (Ctrl+P / Cmd+P → destination "Save as PDF")
+   Strips screen-only chrome, pins a light theme + real colors,
+   and keeps each entry from splitting across pages.
+   ============================================================ */
+@media print {
+  @page {
+    size: A4;
+    margin: 14mm;
+  }
+
+  /* Force backgrounds/colors to actually print, and pin light theme
+     so OS dark mode doesn't produce an ink-heavy dark PDF. */
+  *,
+  *::before,
+  *::after {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  :root {
+    --bs-body-bg: #fff !important;
+    --bs-body-bg-rgb: 255, 255, 255 !important;
+    --bs-body-color: #292929 !important;
+    --bs-body-color-rgb: 41, 41, 41 !important;
+  }
+
+  html,
+  body,
+  .theme-bg-light,
+  .resume-wrapper {
+    background: #fff !important;
+    color: #292929 !important;
+  }
+
+  /* Let the resume fill the page: drop the card framing + outer padding. */
+  .main-wrapper,
+  .container,
+  .container-lg {
+    max-width: none !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .resume-wrapper {
+    max-width: none !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+  }
+
+  /* Slightly denser text for print. */
+  html {
+    font-size: 92%;
+  }
+
+  /* Screen-only elements. */
+  .resume-lang-toggle,
+  .footer,
+  .modal {
+    display: none !important;
+  }
+
+  /* Videos can't print. Hide them, and (Chrome :has) drop the whole
+     column so no empty box or dangling caption is left behind. */
+  video {
+    display: none !important;
+  }
+  div:has(> .webtoonme-mediabox > video) {
+    display: none !important;
+  }
+
+  /* Keep experiences / projects / publications / skill groups intact. */
+  .item,
+  .resume-intro {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* Don't strand a section heading at the bottom of a page. */
+  .resume-section-heading,
+  h3,
+  h4 {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  p {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* Compact the portfolio media for print. */
+  .wcai-imgbox {
+    height: auto !important;
+    max-height: 260px;
+  }
+  .wcai-imgbox img {
+    height: auto !important;
+    max-height: 260px;
+    width: auto !important;
+    max-width: 100%;
+  }
+  .photocard-imgbox {
+    height: 160px !important;
+  }
+  .webtoonme-mediabox {
+    height: auto !important;
+    max-height: 220px;
+  }
+  .webtoonme-mediabox img {
+    height: auto !important;
+    max-height: 220px;
+    width: auto !important;
+    max-width: 100%;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+}
