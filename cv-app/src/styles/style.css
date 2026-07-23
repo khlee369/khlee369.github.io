@@ -1,5 +1,14 @@
+@font-face {
+  font-family: 'Pretendard Variable';
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  src: url('/CV/assets/fonts/PretendardVariable.woff2') format('woff2');
+}
+
 :root {
-  --bs-font-sans-serif: system-ui, Arial, sans-serif,
+  --bs-font-sans-serif: 'Pretendard Variable', Pretendard, system-ui, -apple-system,
+    'Segoe UI', 'Malgun Gothic', 'Apple SD Gothic Neo', Arial, sans-serif;
 }
 
 .modal {
