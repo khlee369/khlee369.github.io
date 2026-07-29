@@ -1,0 +1,6 @@
+# Portfolio PDF renderer deps (WeasyPrint pipeline).
+# Installed automatically into ./.venv on first `npm run pdf:portfolio`.
+weasyprint      # HTML/CSS -> PDF with real embedded (Type0 TrueType) fonts
+markdown        # portfolio markdown -> HTML (tables, fenced code, sane lists)
+fonttools       # decompress the project's PretendardVariable.woff2 -> .ttf
+brotli          # required by fonttools to read woff2

@@ -1,3 +1,11 @@
 # Generated CV export PDFs — never commit (regenerate via `cd cv-app && npm run pdf`)
 *.pdf
 /cv-app/exports/
+
+# Portfolio source markdown — contains internal metrics, keep local only, never
+# commit to this public repo. Rendered to PDF via `cd cv-app && npm run pdf:portfolio`.
+/cv-app/portfolio/
+
+# Portfolio PDF renderer's local Python venv + derived font cache (auto-created on first run)
+/cv-app/scripts/portfolio-pdf/.venv/
+/cv-app/scripts/portfolio-pdf/.cache/

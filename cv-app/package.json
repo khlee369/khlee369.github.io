@@ -8,7 +8,8 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "pdf": "vite build && node scripts/export-pdf.mjs"
+    "pdf": "vite build && node scripts/export-pdf.mjs",
+    "pdf:portfolio": "bash scripts/portfolio-pdf/run.sh"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^7.1.0",

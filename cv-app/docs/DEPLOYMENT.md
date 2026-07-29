@@ -77,6 +77,20 @@ cd cv-app && npm run pdf
 - 최초 1회 브라우저 설치 필요: `npx playwright install chromium`
 - `exports/`와 모든 `*.pdf`는 루트 `.gitignore`로 커밋에서 제외된다
 
+## 포트폴리오 PDF (프로젝트 상세 · 인터뷰용)
+
+이력서 프로젝트의 심층 설명(마크다운)을 CV와 같은 톤의 PDF로 뽑으려면:
+
+```bash
+cd cv-app
+npm run pdf:portfolio            # portfolio/ 의 모든 .md
+npm run pdf:portfolio -- wcai    # 특정 파일만 (portfolio/wcai.md)
+```
+
+- **원본**: `cv-app/portfolio/*.md` — 내부 지표가 담겨 있어 `.gitignore`로 커밋 제외한다(공개 레포이므로 **절대 커밋 금지**, 로컬 소스 전용). → **출력**: `exports/portfolio/`
+- **엔진**: CV용 `npm run pdf`(Chromium)와 달리 **WeasyPrint**로 렌더한다(`scripts/portfolio-pdf/`). Chromium의 PDF는 폰트를 Type3로 임베드해 일부 뷰어에서 흐릿하지만, WeasyPrint는 **Type0 TrueType 벡터**로 임베드해 모든 뷰어에서 선명하다. CV와 동일한 Pretendard·`#54b689` 톤.
+- **최초 1회**: `python3`만 있으면 첫 실행 시 로컬 venv(`scripts/portfolio-pdf/.venv`)를 자동 생성·설치한다(venv·폰트 캐시는 gitignore).
+
 ## 경로 설정 주의사항
 
 ### base 경로 변경 시 체크리스트
